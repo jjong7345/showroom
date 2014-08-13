@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+    <title>High 5 Showroom</title>
+    <meta charset="UTF-8">
+    <link media="all" type="text/css" rel="stylesheet" href="css/global.css">
+    <!-- <link href="css/bootstrapTheme.css" rel="stylesheet"> -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/idangerous.swiper.css">
+    <link rel="stylesheet" href="css/idangerous.swiper.scrollbar.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link href="js/google-code-prettify/prettify.css" rel="stylesheet">
+
+</head>
+<body>
+    <div id="egg" style="display:none"></div>
+    <div id="top">
+        <div id="top-bar1"></div>
+        <div id="logo"></div>
+        <div id="top-bar2"></div>
+    </div>
+    <div class="filter-test" id="features-collect-2-wild-bonus" style="cursor:pointer; position:absolute; top:23px; z-index:100; background:#666"> <p>features-collect-2-wild-bonus </p></div>
+    
+    <div class="filter-test" id="features-stacked-wilds" style="cursor:pointer; position:absolute; top:43px; z-index:100; background:#666"> <p>features-stacked-wilds </p></div>
+
+    <div class="filter-test" id="features-split-symbols" style="cursor:pointer; position:absolute; top:63px; z-index:100; background:#666"> <p>features-split-symbols </p></div>
+
+
+
+
+    <div id="btm"></div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="games-container">
+                    <script id="game_block_template" type="text/template" charset="utf-8">
+                        <div class="game">
+                            <img class="shadow" src="images/shadow.png">
+                            <img src="{{ image_url }}">
+                        </div>
+                    </script>
+                </div>
+            </div>
+        </div>
+        <!-- Scrollbar: -->
+        <div class="swiper-scrollbar"></div> 
+    </div>
+	
+
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="span8 legalinfo">
+                    © 2014 High 5 Games, LLC. All Rights Reserved.  | Terms of Service  |  Privacy Policy  |  Legal Notices
+                </div>
+                <div class="span2 pull-right"><img src="images/prlogo.png"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="game-modal" class="game-modal">
+        <div class="game-modal-content">
+            <div id="game-preloader">
+                <img src="images/preloader.jpg" class="game-preloader-splash">
+                <img src="images/preloader_spinner.gif" class="game-preloader-spinner">
+            </div>
+            <div class="flash-content-container">
+                <div id="flash-content"></div>
+            </div>
+        </div>
+        <button class="game-modal-availability-button">Availability</button>
+        <img src="images/modal_logo.png" class="game-modal-logo">
+        <img src="images/modal_wing_left.png" class="game-modal-wing left">
+        <img src="images/modal_wing_right.png" class="game-modal-wing right">
+    </div>
+
+    <div id="game-availability-modal" class="game-availability-modal">
+        <div class="game-modal-content">
+            <p>Availability</p>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="js/swfobject.js"></script>
+
+    <!-- Don't forget to get the latest Swiper and scrollbar version here-->
+    <!--<script src="js/idangerous.swiper.min.js"></script>
+    <script src="js/idangerous.swiper.scrollbar.min.js"></script>-->
+    <script src="js/h5gf.js"></script>
+
+    <script src="js/bundle.js"></script>
+    <script>
+        ShowRoom.init();
+    </script>
+</body>
+</html>

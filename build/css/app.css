@@ -1,0 +1,167 @@
+/* reset Styles */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  position: relative;
+  height: 100%;
+  line-height: 0;
+  min-width: 940px;
+}
+
+#top-bar1 {
+  position: absolute;
+  top:0;
+  width:100%;
+  height: 77px;
+  background: url(../images/bar-header-big.png) repeat-x;
+}
+#top-bar2 {
+  position: absolute;
+  top:126px;
+  width:100%;
+  height: 17px;
+  background: url(../images/bar-header.png) repeat-x;
+}
+#logo {
+  background: url(../images/logo.png) no-repeat;
+  background-position: 0px -5px;
+  height: 114px;
+  width: 772px;
+  margin: 0 auto;
+  position: relative;
+}
+.swiper-container {
+  width: 100%;
+  color: #fff;
+  position: relative;
+  margin-top: 50px;
+}
+.pagination {
+  position: absolute;
+  z-index: 20;
+  left: 10px;
+  bottom: 10px;
+}
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background: #222;
+  margin-right: 5px;
+  opacity: 0.8;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.swiper-visible-switch {
+  background: #aaa;
+}
+.swiper-active-switch {
+  background: #fff;
+}
+
+
+
+
+/***************************************************/
+
+
+.game-container {
+	width: 2800px;
+	background: #333;
+	z-index: 200;
+	position: relative;
+}
+.game {
+  overflow: hidden;
+	/*float: left;*/
+	width:200px;
+	cursor:pointer;
+  position: absolute;
+  display:none;
+}
+.applyTransition {
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  -moz-transition: -moz-transform .5s ease-in-out;
+  -o-transition: -o-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+}
+
+.game .shadow {
+  width:100%;
+}
+.game img {
+  position:absolute;
+	width:95%;
+  height: auto;
+  outline: 0;
+  border: 0;
+  /*box-shadow:5px 5px 0px rgba(0,0,0,0.2);*/
+}
+.swipe_wrapper {
+	height: 0;
+}
+.swiper-scrollbar {
+	height:20px;
+	width:700px;
+	margin: 20px auto;
+}
+.swiper-scrollbar-cursor-drag {
+	cursor: pointer;
+}
+
+.swiper-free-mode > .swiper-wrapper {
+  /*-webkit-transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+  transition: all .5s ease-out;*/
+  margin: 0;
+}

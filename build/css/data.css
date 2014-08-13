@@ -1,0 +1,199 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font: normal 13px Arial; 
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+}
+
+.sidebar {
+    float: left;
+    padding: 10px;
+    width: 480px;
+}
+
+.game-column {
+    border-bottom: 1px solid #ddd;
+    float: left;
+    margin-bottom: 6px;
+    width: 100%;
+}
+
+.game-container {
+    clear: both;
+    float: left;
+    padding-bottom: 4px;
+    position: relative;
+    width: 100%;
+}
+
+.game-container img {
+    background: #f1f1f1;
+    float: left;
+    margin-bottom: 4px;
+    min-height: 100px;
+    width: 30%;
+}
+
+.game-container a {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.game-container:hover .game-details {
+    display: block;
+}
+
+.game-details {
+    background: #f1f1f1;
+    float: left;
+    font-size: 12px;
+    margin-left: 8px;
+    padding: 10px;
+    width: 300px;
+}
+
+.game-details p {
+    margin-bottom: 8px;
+}
+
+.game-description {
+    clear: both;
+}
+
+.game-features {
+    background: #ddd;
+    padding: 4px;
+}
+
+/*
+Modal additions
+*/
+.game-modal {
+    display: none;
+}
+
+#flash-content {
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 30;
+}
+
+#game-preloader {
+    height: 597px;
+    left: 0;
+    position: absolute;
+    width: 760px;
+    top: 0;
+    z-index: 40;
+}
+
+/*
+jQuery UI Dialog
+*/
+.ui-dialog {
+    border: 0;
+    left: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+}
+
+.ui-corner-all {
+    border-radius: 0;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+    border: 0;
+    height: 0;
+    padding: 0;
+    z-index: 11;
+}
+
+.ui-dialog .ui-dialog-title {
+    display: none;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+    height: 25px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 25px;
+    z-index: 20;
+}
+
+.ui-dialog .ui-dialog-titlebar-close .ui-icon {
+    display: block;
+    text-indent: -99999px;
+}
+
+.ui-dialog .ui-dialog-titlebar-close.ui-state-hover {
+    border: 0;
+}
+
+.ui-dialog .ui-dialog-titlebar-close span {
+    margin: 4px;
+}
+
+.ui-widget-header .ui-icon {
+  background-image: url('ui-lightness/images/ui-icons_ffffff_256x240.png');
+  background-position: -96px -128px;
+}
+
+.ui-dialog .ui-widget-content {
+    background: #eee;
+    z-index: 10;
+}
+
+.ui-dialog .ui-dialog-content {
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+}
+
+.ui-resizable-handle {
+    display: none;   
+}
+
+.ui-widget-overlay {
+    background: #fff;
+    opacity: .7;
+}
+
+/*
+Filter page
+*/
+.filter-page {
+    padding: 20px;
+}
+
+.filter-page h2 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 4px;
+    margin-bottom: 12px;
+}
+
+.filters a {
+    display: block;
+    margin: 0 0 10px 0;
+}
